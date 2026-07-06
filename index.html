@@ -4,18 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meskey – Informativa sulla Privacy</title>
+
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 20px 60px; color: #1a1a1a; line-height: 1.7; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px 20px 60px;
+      color: #1a1a1a;
+      line-height: 1.7;
+      background: #ffffff;
+    }
+
     h1 { font-size: 26px; color: #2B7A78; margin-bottom: 4px; }
     h2 { font-size: 18px; color: #2B7A78; margin-top: 36px; }
     p, li { font-size: 15px; }
     ul { padding-left: 20px; }
-    a { color: #2B7A78; }
-    .meta { font-size: 13px; color: #666; margin-bottom: 32px; }
-    hr { border: none; border-top: 1px solid #e0e0e0; margin: 40px 0; }
+    a { color: #2B7A78; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .meta {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 32px;
+    }
+
+    .lang-divider {
+      margin: 60px 0 20px;
+      font-size: 13px;
+      color: #888;
+      text-align: center;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 40px 0;
+    }
   </style>
 </head>
+
 <body>
+
+  <!-- 🇮🇹 ITALIANO -->
 
   <h1>Informativa sulla Privacy</h1>
   <div class="meta">Applicazione: <strong>Meskey</strong> &nbsp;|&nbsp; Ultimo aggiornamento: luglio 2025</div>
@@ -23,66 +54,140 @@
   <p>La presente informativa descrive come l'applicazione <strong>Meskey</strong> raccoglie, utilizza e protegge i dati degli utenti, in conformità con il Regolamento Europeo sulla Protezione dei Dati (GDPR – Reg. UE 2016/679).</p>
 
   <h2>1. Titolare del trattamento</h2>
-  <p>Il titolare del trattamento dei dati è il developer indipendente di Meskey, contattabile all'indirizzo:<br>
+  <p>Il titolare del trattamento è il developer indipendente di Meskey:<br>
   <a href="mailto:meskey.app@gmail.com">meskey.app@gmail.com</a></p>
 
-  <h2>2. Dati raccolti e modalità di raccolta</h2>
-  <p>Meskey è un'applicazione di finanza personale che funziona <strong>interamente offline</strong>. I dati inseriti dall'utente — inclusi nome, dati finanziari, spese, entrate e finanziamenti — vengono salvati <strong>esclusivamente sul dispositivo locale</strong> dell'utente tramite la memoria interna dell'app (<em>localStorage</em>). Nessun dato finanziario viene trasmesso a server esterni o terze parti.</p>
+  <h2>2. Dati raccolti</h2>
+  <p>Meskey è un'applicazione di finanza personale che funziona <strong>interamente offline</strong>. Tutti i dati inseriti dall'utente (entrate, spese, finanziamenti) sono salvati <strong>esclusivamente sul dispositivo</strong> tramite memoria locale (<em>localStorage</em>). Nessun dato finanziario viene trasmesso a server esterni.</p>
 
-  <p>L'app può raccogliere o trasmettere dati nei seguenti casi limitati:</p>
+  <p>Eccezioni limitate:</p>
   <ul>
-    <li><strong>Analisi documenti tramite AI:</strong> quando l'utente carica un documento (PDF o immagine) per l'analisi automatica, il contenuto del documento viene inviato all'API Google Gemini (Google LLC) al solo scopo di estrarne informazioni finanziarie. Il documento non viene conservato da Meskey né utilizzato per altri scopi.</li>
-    <li><strong>Dati meteo:</strong> l'app può richiedere dati meteo al servizio Open-Meteo (open-meteo.com) in base alla posizione approssimativa del dispositivo, senza trasmettere dati personali identificativi.</li>
-    <li><strong>Backup:</strong> l'utente può scegliere di esportare un backup dei propri dati in formato JSON sul dispositivo. Questo file rimane sotto il controllo esclusivo dell'utente.</li>
+    <li><strong>Analisi documenti tramite AI:</strong> i documenti caricati (PDF o immagini) vengono inviati temporaneamente a Google Gemini (Google LLC) per l’estrazione automatica dei dati. Non vengono archiviati dall'app.</li>
+    <li><strong>Dati meteo:</strong> richiesti a Open-Meteo senza identificare l’utente.</li>
+    <li><strong>Backup:</strong> esportazione manuale in JSON sotto controllo dell’utente.</li>
   </ul>
 
-  <h2>3. Finalità del trattamento</h2>
+  <h2>3. Finalità</h2>
   <ul>
-    <li>Fornire le funzionalità dell'app (gestione spese, entrate, finanziamenti)</li>
-    <li>Analisi automatica di documenti finanziari tramite intelligenza artificiale</li>
-    <li>Invio di notifiche locali per ricordare scadenze di pagamento</li>
-    <li>Visualizzazione delle condizioni meteo nella schermata principale</li>
+    <li>Gestione finanze personali</li>
+    <li>Analisi documenti tramite AI</li>
+    <li>Promemoria locali</li>
+    <li>Visualizzazione meteo</li>
   </ul>
 
-  <h2>4. Base giuridica del trattamento</h2>
-  <p>Il trattamento dei dati avviene sulla base del consenso dell'utente (art. 6, par. 1, lett. a del GDPR) e per l'esecuzione del servizio richiesto (art. 6, par. 1, lett. b del GDPR).</p>
+  <h2>4. Base giuridica</h2>
+  <p>Consenso dell’utente e utilizzo del servizio richiesto.</p>
 
   <h2>5. Terze parti</h2>
   <ul>
-    <li><strong>Google Gemini (Google LLC)</strong> — usato per l'analisi AI dei documenti caricati. Google tratta i dati secondo la propria <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>.</li>
-    <li><strong>Open-Meteo</strong> — servizio meteo open source. Non raccoglie dati personali identificativi. <a href="https://open-meteo.com/en/terms" target="_blank">Termini di utilizzo</a>.</li>
+    <li><strong>Google Gemini</strong> – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+    <li><strong>Open-Meteo</strong> – <a href="https://open-meteo.com/en/terms" target="_blank">Termini</a></li>
   </ul>
 
-  <h2>6. Permessi richiesti</h2>
+  <h2>6. Permessi</h2>
   <ul>
-    <li><strong>Fotocamera:</strong> per la scansione di documenti finanziari</li>
-    <li><strong>Archiviazione:</strong> per il salvataggio e il ripristino dei backup</li>
-    <li><strong>Notifiche:</strong> per i promemoria sulle scadenze di pagamento</li>
-    <li><strong>Posizione approssimativa:</strong> per il servizio meteo (opzionale)</li>
+    <li>Fotocamera</li>
+    <li>Archiviazione</li>
+    <li>Notifiche</li>
+    <li>Posizione (opzionale)</li>
   </ul>
 
-  <h2>7. Conservazione dei dati</h2>
-  <p>I dati finanziari sono conservati esclusivamente sul dispositivo dell'utente. L'utente può eliminarli in qualsiasi momento tramite la funzione "Reimposta app" nelle impostazioni, oppure disinstallando l'applicazione.</p>
+  <h2>7. Conservazione</h2>
+  <p>I dati restano sul dispositivo e possono essere eliminati in qualsiasi momento.</p>
 
-  <h2>8. Diritti dell'utente</h2>
-  <p>In conformità con il GDPR, l'utente ha diritto a:</p>
+  <h2>8. Diritti</h2>
   <ul>
-    <li>Accedere ai propri dati</li>
-    <li>Rettificarli o aggiornarli</li>
-    <li>Cancellarli (tramite reset dell'app o disinstallazione)</li>
-    <li>Opporsi al trattamento</li>
-    <li>Presentare reclamo all'autorità di controllo competente (Garante Privacy italiano)</li>
+    <li>Accesso</li>
+    <li>Modifica</li>
+    <li>Cancellazione</li>
+    <li>Opposizione</li>
   </ul>
-  <p>Per esercitare i propri diritti: <a href="mailto:meskey.app@gmail.com">meskey.app@gmail.com</a></p>
 
   <h2>9. Sicurezza</h2>
-  <p>I dati sono protetti dalla sicurezza del dispositivo dell'utente. L'app non trasmette dati finanziari su reti esterne. Le comunicazioni con Google Gemini avvengono tramite connessione cifrata (HTTPS).</p>
+  <p>I dati sono protetti dal dispositivo. Le comunicazioni AI sono cifrate (HTTPS).</p>
 
-  <h2>10. Modifiche alla presente informativa</h2>
-  <p>Eventuali modifiche alla presente informativa verranno pubblicate su questa pagina con aggiornamento della data in cima al documento. Si consiglia di consultarla periodicamente.</p>
+  <h2>10. Modifiche</h2>
+  <p>La presente informativa può essere aggiornata nel tempo.</p>
+
+  <h2>11. Uso dell’Intelligenza Artificiale</h2>
+  <p>L'app utilizza servizi di intelligenza artificiale per analizzare documenti finanziari caricati dall'utente. I dati inviati sono limitati allo stretto necessario e utilizzati esclusivamente per fornire il servizio richiesto. L'utente è responsabile dei contenuti caricati.</p>
 
   <hr>
-  <p style="font-size: 13px; color: #888;">Meskey &copy; 2025 &nbsp;|&nbsp; <a href="mailto:meskey.app@gmail.com">meskey.app@gmail.com</a></p>
+
+  <div class="lang-divider">🇬🇧 English version below</div>
+
+  <!-- 🇬🇧 ENGLISH -->
+
+  <h1>Privacy Policy</h1>
+  <div class="meta">Application: <strong>Meskey</strong> &nbsp;|&nbsp; Last updated: July 2025</div>
+
+  <p>This Privacy Policy explains how <strong>Meskey</strong> collects, uses, and protects user data in compliance with the GDPR (EU Regulation 2016/679).</p>
+
+  <h2>1. Data Controller</h2>
+  <p>Independent developer:<br>
+  <a href="mailto:meskey.app@gmail.com">meskey.app@gmail.com</a></p>
+
+  <h2>2. Data Collection</h2>
+  <p>Meskey operates <strong>entirely offline</strong>. All financial data is stored <strong>locally on the device</strong>. No data is transmitted externally.</p>
+
+  <p>Limited exceptions:</p>
+  <ul>
+    <li><strong>AI document analysis:</strong> files are temporarily processed by Google Gemini (Google LLC).</li>
+    <li><strong>Weather data:</strong> via Open-Meteo.</li>
+    <li><strong>Backups:</strong> exported manually by the user.</li>
+  </ul>
+
+  <h2>3. Purpose</h2>
+  <ul>
+    <li>Personal finance management</li>
+    <li>AI document analysis</li>
+    <li>Local reminders</li>
+    <li>Weather display</li>
+  </ul>
+
+  <h2>4. Legal Basis</h2>
+  <p>User consent and service execution.</p>
+
+  <h2>5. Third Parties</h2>
+  <ul>
+    <li><strong>Google Gemini</strong></li>
+    <li><strong>Open-Meteo</strong></li>
+  </ul>
+
+  <h2>6. Permissions</h2>
+  <ul>
+    <li>Camera</li>
+    <li>Storage</li>
+    <li>Notifications</li>
+    <li>Location (optional)</li>
+  </ul>
+
+  <h2>7. Data Retention</h2>
+  <p>Data is stored locally and can be deleted anytime.</p>
+
+  <h2>8. User Rights</h2>
+  <ul>
+    <li>Access</li>
+    <li>Correction</li>
+    <li>Deletion</li>
+    <li>Objection</li>
+  </ul>
+
+  <h2>9. Security</h2>
+  <p>Data is protected by device security. AI communication uses HTTPS.</p>
+
+  <h2>10. Changes</h2>
+  <p>This policy may be updated.</p>
+
+  <h2>11. Artificial Intelligence Usage</h2>
+  <p>The app uses AI services to analyze uploaded financial documents. Only necessary data is processed and used solely to provide the requested functionality. Users are responsible for uploaded content.</p>
+
+  <hr>
+
+  <p style="font-size: 13px; color: #888;">
+    Meskey &copy; 2025 &nbsp;|&nbsp;
+    <a href="mailto:meskey.app@gmail.com">meskey.app@gmail.com</a>
+  </p>
 
 </body>
 </html>
