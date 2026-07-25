@@ -51,66 +51,61 @@
   <h1>Informativa sulla Privacy</h1>
   <div class="meta">Applicazione: <strong>Meskey</strong> &nbsp;|&nbsp; Ultimo aggiornamento: luglio 2026</div>
 
-  <p>La presente informativa descrive come l'applicazione <strong>Meskey</strong> raccoglie, utilizza e protegge i dati degli utenti, in conformità con il Regolamento Europeo sulla Protezione dei Dati (GDPR – Reg. UE 2016/679).</p>
+  <p>La presente informativa descrive come l'applicazione <strong>Meskey</strong> raccoglie, utilizza e protegge i dati degli utenti, in conformità con il Regolamento Europeo sulla Protezione dei Dati (GDPR – Reg. UE 2016/679) e le direttive del Google Play Store.</p>
 
   <h2>1. Titolare del trattamento</h2>
-  <p>Il titolare del trattamento è il developer indipendente di Meskey:<br>
+  <p>Il titolare del trattamento è lo sviluppatore indipendente di Meskey:<br>
   <a href="mailto:meskey.app@gmail.com">meskey.app@gmail.com</a></p>
 
-  <h2>2. Dati raccolti</h2>
-  <p>Meskey è un'applicazione di finanza personale che funziona <strong>interamente offline</strong>. Tutti i dati inseriti dall'utente (entrate, spese, finanziamenti) sono salvati <strong>esclusivamente sul dispositivo</strong> tramite memoria locale (<em>localStorage</em>). Nessun dato finanziario viene trasmesso a server esterni.</p>
+  <h2>2. Dati raccolti e Conservazione Locale</h2>
+  <p>Meskey è un'applicazione di finanza personale progettata secondo il principio della privacy prima di tutto (<em>Local-First Architecture</em>). Tutti i dati finanziari inseriti dall'utente (entrate, spese, budget, finanziamenti) sono salvati <strong>esclusivamente sul dispositivo</strong> tramite la memoria locale riservata all'applicazione. Nessun dato o saldo finanziario viene trasmesso o memorizzato su server proprietari remoti.</p>
 
-  <p>Eccezioni limitate:</p>
+  <p>Eccezioni limitate alla trasmissione dati:</p>
   <ul>
-    <li><strong>Analisi documenti tramite AI:</strong> i documenti caricati (PDF o immagini) vengono inviati temporaneamente a Google Gemini (Google LLC) per l’estrazione automatica dei dati. Non vengono archiviati dall'app.</li>
-    <li><strong>Dati meteo:</strong> richiesti a Open-Meteo senza identificare l’utente.</li>
-    <li><strong>Backup:</strong> esportazione manuale in JSON sotto controllo dell’utente.</li>
+    <li><strong>Analisi documenti tramite AI:</strong> quando l'utente utilizza la funzione di scansione automatica, i documenti o le foto caricate (es. scontrini, estratti conto) vengono trasmessi temporaneamente tramite connessione protetta cifrata (HTTPS) ai servizi cloud di Google Gemini (Google LLC) al solo ed esclusivo scopo di estrarre il testo e i dati della spesa. I file non vengono archiviati a tempo indeterminato né usati per addestrare i modelli di AI.</li>
+    <li><strong>Dati meteo:</strong> le coordinate o la località selezionata vengono inviate ai server di Open-Meteo per la sola erogazione delle informazioni meteorologiche, senza identificare l’utente.</li>
+    <li><strong>Backup:</strong> l'esportazione e l'importazione dei file di backup (es. formato JSON) avvengono in modo manuale e sotto il completo controllo dell’utente.</li>
   </ul>
 
-  <h2>3. Finalità</h2>
+  <h2>3. Finalità del trattamento</h2>
   <ul>
-    <li>Gestione finanze personali</li>
-    <li>Analisi documenti tramite AI</li>
-    <li>Promemoria locali</li>
-    <li>Visualizzazione meteo</li>
+    <li>Gestione ed elaborazione delle finanze personali e budget.</li>
+    <li>Estrattore e lettore automatico di documenti tramite AI.</li>
+    <li>Erogazione di notifiche e promemoria locali.</li>
+    <li>Visualizzazione delle informazioni meteo integrate.</li>
   </ul>
 
   <h2>4. Base giuridica</h2>
-  <p>Consenso dell’utente e utilizzo del servizio richiesto.</p>
+  <p>Esecuzione del servizio richiesto dall'utente e consenso esplicito manifestato tramite l'utilizzo delle specifiche funzionalità dell'applicazione.</p>
 
-  <h2>5. Terze parti</h2>
+  <h2>5. Servizi di Terze Parti</h2>
   <ul>
-    <li><strong>Google Gemini</strong> – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
-    <li><strong>Open-Meteo</strong> – <a href="https://open-meteo.com/en/terms" target="_blank">Termini</a></li>
+    <li><strong>Google Gemini (Google LLC)</strong> – Per l'elaborazione OCR/AI dei documenti: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy di Google</a></li>
+    <li><strong>Open-Meteo API</strong> – Per i servizi meteorologici: <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Termini e Condizioni Open-Meteo</a></li>
   </ul>
 
-  <h2>6. Permessi</h2>
+  <h2>6. Permessi richiesti sul dispositivo</h2>
   <ul>
-    <li>Fotocamera</li>
-    <li>Archiviazione</li>
-    <li>Notifiche</li>
-    <li>Posizione (opzionale)</li>
+    <li><strong>Fotocamera:</strong> Utilizzata unicamente per scattare foto agli scontrini da analizzare.</li>
+    <li><strong>Archiviazione / File:</strong> Necessaria per selezionare file Excel, CSV o immagini dalla galleria ed effettuare backup.</li>
+    <li><strong>Notifiche:</strong> Per inviare promemoria e scadenze gestiti interamente sul telefono.</li>
+    <li><strong>Posizione (Opzionale):</strong> Utilizzata esclusivamente per rilevare la località corrente per il servizio meteo, senza alcun tracciamento o storico degli spostamenti.</li>
   </ul>
 
-  <h2>7. Conservazione</h2>
-  <p>I dati restano sul dispositivo e possono essere eliminati in qualsiasi momento.</p>
+  <h2>7. Cancellazione dei Dati</h2>
+  <p>Poiché tutti i dati sono conservati unicamente sul dispositivo, la cancellazione dell'applicazione, la pulizia della cache o dei dati dalle impostazioni di Android comporta la <strong>rimozione definitiva e irreversibile</strong> di tutte le informazioni finanziarie salvate.</p>
 
-  <h2>8. Diritti</h2>
-  <ul>
-    <li>Accesso</li>
-    <li>Modifica</li>
-    <li>Cancellazione</li>
-    <li>Opposizione</li>
-  </ul>
+  <h2>8. Diritti dell'utente (GDPR)</h2>
+  <p>In conformità agli articoli 15-22 del GDPR, l'utente ha il pieno controllo diretto dei propri dati, potendo accedere, modificare o cancellare qualsiasi informazione direttamente all'interno dell'applicazione. Per qualsiasi richiesta relativa alla privacy è possibile contattare il supporto all'indirizzo email sopra indicato.</p>
 
   <h2>9. Sicurezza</h2>
-  <p>I dati sono protetti dal dispositivo. Le comunicazioni AI sono cifrate (HTTPS).</p>
+  <p>I dati registrati nell'app sono protetti dai sistemi di sicurezza nativi del sistema operativo Android. Tutte le comunicazioni verso le API esterne (AI e Meteo) avvengono attraverso protocolli cifrati e sicuri (HTTPS/TLS).</p>
 
-  <h2>10. Modifiche</h2>
-  <p>La presente informativa può essere aggiornata nel tempo.</p>
+  <h2>10. Uso dell’Intelligenza Artificiale</h2>
+  <p>L'applicazione integra servizi di Intelligenza Artificiale per semplificare l'inserimento delle transazioni tramite lettura di scontrini e documenti. I dati elaborati sono limitati a quelli visibili sul documento e utilizzati esclusivamente per la generazione automatica della transazione. L'utente resta l'unico responsabile dei contenuti e dei documenti caricati nell'app.</p>
 
-  <h2>11. Uso dell’Intelligenza Artificiale</h2>
-  <p>L'app utilizza servizi di intelligenza artificiale per analizzare documenti finanziari caricati dall'utente. I dati inviati sono limitati allo stretto necessario e utilizzati esclusivamente per fornire il servizio richiesto. L'utente è responsabile dei contenuti caricati.</p>
+  <h2>11. Modifiche alla presente Informativa</h2>
+  <p>La presente informativa sulla privacy può essere soggetta ad aggiornamenti. Si consiglia di consultare periodicamente questa pagina.</p>
 
   <hr>
 
@@ -121,66 +116,61 @@
   <h1>Privacy Policy</h1>
   <div class="meta">Application: <strong>Meskey</strong> &nbsp;|&nbsp; Last updated: July 2026</div>
 
-  <p>This Privacy Policy explains how <strong>Meskey</strong> collects, uses, and protects user data in compliance with the GDPR (EU Regulation 2016/679).</p>
+  <p>This Privacy Policy describes how the <strong>Meskey</strong> application collects, uses, and protects user data in compliance with the European General Data Protection Regulation (GDPR – Reg. EU 2016/679) and Google Play Store policies.</p>
 
   <h2>1. Data Controller</h2>
-  <p>Independent developer:<br>
+  <p>Independent Developer:<br>
   <a href="mailto:meskey.app@gmail.com">meskey.app@gmail.com</a></p>
 
-  <h2>2. Data Collection</h2>
-  <p>Meskey operates <strong>entirely offline</strong>. All financial data is stored <strong>locally on the device</strong>. No data is transmitted externally.</p>
+  <h2>2. Data Collection and Local Storage</h2>
+  <p>Meskey is designed with a <strong>Local-First Architecture</strong>. All financial data entered by the user (income, expenses, budgets, loans) is stored <strong>exclusively on the device</strong> in the local application storage. No financial records or account balances are ever transmitted to or stored on remote proprietary servers.</p>
 
-  <p>Limited exceptions:</p>
+  <p>Limited data transmission exceptions:</p>
   <ul>
-    <li><strong>AI document analysis:</strong> files are temporarily processed by Google Gemini (Google LLC).</li>
-    <li><strong>Weather data:</strong> via Open-Meteo.</li>
-    <li><strong>Backups:</strong> exported manually by the user.</li>
+    <li><strong>AI Document Analysis:</strong> When using the document scanning feature, uploaded files or images (e.g., receipts, bank statements) are temporarily transmitted via encrypted connections (HTTPS) to Google Gemini cloud services (Google LLC) solely to extract transaction text and amounts. Files are not permanently stored nor used to train AI models.</li>
+    <li><strong>Weather Data:</strong> Location data or selected cities are sent to Open-Meteo servers strictly to display weather information without identifying the user.</li>
+    <li><strong>Backups:</strong> Manual export and import of backup files (e.g., JSON format) are executed entirely under user control.</li>
   </ul>
 
-  <h2>3. Purpose</h2>
+  <h2>3. Purpose of Processing</h2>
   <ul>
-    <li>Personal finance management</li>
-    <li>AI document analysis</li>
-    <li>Local reminders</li>
-    <li>Weather display</li>
+    <li>Personal finance management and budget tracking.</li>
+    <li>AI-powered automated receipt and document processing.</li>
+    <li>Local notifications and payment reminders.</li>
+    <li>Display of integrated weather conditions.</li>
   </ul>
 
   <h2>4. Legal Basis</h2>
-  <p>User consent and service execution.</p>
+  <p>Execution of the service requested by the user and explicit consent provided when using specific app features.</p>
 
-  <h2>5. Third Parties</h2>
+  <h2>5. Third-Party Services</h2>
   <ul>
-    <li><strong>Google Gemini</strong></li>
-    <li><strong>Open-Meteo</strong></li>
+    <li><strong>Google Gemini (Google LLC)</strong> – For AI document processing: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+    <li><strong>Open-Meteo API</strong> – For weather features: <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo Terms</a></li>
   </ul>
 
-  <h2>6. Permissions</h2>
+  <h2>6. Device Permissions</h2>
   <ul>
-    <li>Camera</li>
-    <li>Storage</li>
-    <li>Notifications</li>
-    <li>Location (optional)</li>
+    <li><strong>Camera:</strong> Used exclusively to capture receipt images for scanning.</li>
+    <li><strong>Storage / Media Files:</strong> Required to select Excel/CSV files or receipt images from the gallery and perform local backups.</li>
+    <li><strong>Notifications:</strong> Used to display payment reminders scheduled locally on the device.</li>
+    <li><strong>Location (Optional):</strong> Used strictly to determine current location for weather updates without tracking user location history.</li>
   </ul>
 
-  <h2>7. Data Retention</h2>
-  <p>Data is stored locally and can be deleted anytime.</p>
+  <h2>7. Data Retention and Deletion</h2>
+  <p>Since all data is stored locally on the device, uninstalling the app or clearing application data via Android settings will <strong>permanently and irreversibly delete</strong> all stored financial records.</p>
 
-  <h2>8. User Rights</h2>
-  <ul>
-    <li>Access</li>
-    <li>Correction</li>
-    <li>Deletion</li>
-    <li>Objection</li>
-  </ul>
+  <h2>8. User Rights (GDPR)</h2>
+  <p>Under GDPR articles 15-22, users maintain full control over their data and can access, edit, or delete any record directly within the app. For privacy-related inquiries, contact support at the provided email address.</p>
 
   <h2>9. Security</h2>
-  <p>Data is protected by device security. AI communication uses HTTPS.</p>
+  <p>App data is secured by Android's native OS security framework. All network communication with third-party APIs (AI and Weather) is encrypted via HTTPS/TLS.</p>
 
-  <h2>10. Changes</h2>
-  <p>This policy may be updated.</p>
+  <h2>10. Use of Artificial Intelligence</h2>
+  <p>The app incorporates Artificial Intelligence services to streamline transaction entry via document reading. Processed data is strictly limited to information present on the document and used solely to output transaction details. Users remain responsible for uploaded content.</p>
 
-  <h2>11. Artificial Intelligence Usage</h2>
-  <p>The app uses AI services to analyze uploaded financial documents. Only necessary data is processed and used solely to provide the requested functionality. Users are responsible for uploaded content.</p>
+  <h2>11. Changes to this Policy</h2>
+  <p>This policy may be updated periodically. Users are encouraged to review this page regularly.</p>
 
   <hr>
 
@@ -191,4 +181,3 @@
 
 </body>
 </html>
-
