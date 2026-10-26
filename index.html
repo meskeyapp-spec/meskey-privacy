@@ -20,7 +20,7 @@
 <body>
 
   <h1>Informativa sulla Privacy</h1>
-  <div class="meta">Applicazione: <strong>Meskey</strong> &nbsp;|&nbsp; Ultimo aggiornamento: <strong>28 luglio 2026</strong></div>
+  <div class="meta">Applicazione: <strong>Meskey</strong> &nbsp;|&nbsp; Ultimo aggiornamento: <strong>26 ottobre 2026</strong></div>
 
   <p>La presente informativa descrive come l'applicazione <strong>Meskey</strong> raccoglie, utilizza e protegge i dati degli utenti, in conformità con il Regolamento Europeo sulla Protezione dei Dati (GDPR – Reg. UE 2016/679) e le linee guida del Google Play Store.</p>
 
@@ -33,14 +33,17 @@
 
   <p>Eccezioni limitate alla trasmissione dati (solo se l'utente attiva o usa la funzione corrispondente):</p>
   <ul>
-    <li><strong>Analisi documenti tramite AI:</strong> quando l'utente scansiona o carica un documento (PDF, immagine, estratto), il contenuto viene trasmesso temporaneamente, tramite connessione cifrata (HTTPS), ai servizi cloud <strong>Google Gemini</strong> (Google LLC) al solo scopo di estrarre importi, date e descrizioni. Meskey non conserva copie del documento su server esterni.</li>
-    <li><strong>Assistente AI in chat (tab ✨):</strong> se l'utente usa la chat finanziaria, l'app invia a Google Gemini un <strong>riepilogo strutturato</strong> dei dati finanziari presenti sul telefono (spese, entrate, finanziamenti, saldi, trend) necessario per rispondere alle domande. Non vengono inviati PIN, password o numeri di carta completi.</li>
-    <li><strong>Import Excel con AI:</strong> per alcuni file di estratto conto, categorie o mapping possono essere proposti tramite Google Gemini.</li>
-    <li><strong>Dettatura vocale:</strong> il riconoscimento vocale utilizza i servizi del dispositivo (es. motore Google del telefono), secondo le impostazioni di sistema. Il testo riconosciuto viene inviato a Gemini <strong>solo</strong> se l'utente lo invia nella chat AI.</li>
+    <li><strong>Analisi documenti tramite AI:</strong> quando l'utente scansiona o carica un documento (PDF, immagine, estratto, piano di ammortamento di un finanziamento), il contenuto viene trasmesso temporaneamente, tramite connessione cifrata (HTTPS), ai servizi cloud <strong>Google Gemini</strong> (Google LLC) al solo scopo di estrarre importi, date e descrizioni. Meskey non conserva copie del documento su server esterni.</li>
+    <li><strong>Assistente AI in chat (tab ✨):</strong> se l'utente usa la chat finanziaria, l'app invia a Google Gemini un <strong>riepilogo strutturato</strong> dei dati finanziari presenti sul telefono (spese, entrate, finanziamenti, saldi, trend) necessario per rispondere alle domande. Non vengono inviati PIN, password o numeri di carta completi. Se l'utente ha compilato il <strong>Profilo finanziario</strong> (obiettivo, orizzonte di tempo, propensione al rischio e importo obiettivo, tutti facoltativi), queste informazioni sono incluse nella richiesta per rendere più mirate le risposte. Alcuni indicatori (per esempio tasso di risparmio, mesi di spese coperti dal conto, peso delle rate sul reddito) sono calcolati sul telefono e inviati come parte del riepilogo.</li>
+    <li><strong>Import Excel con AI:</strong> la lettura e la prima categorizzazione dei movimenti avvengono sul telefono. Solo per le righe che l'app non riesce a classificare con certezza, e <strong>soltanto dopo la conferma dell'utente</strong>, la descrizione e l'importo di quelle righe sono inviati a Google Gemini per proporre nome e categoria. I nomi e le categorie scelti dall'utente restano memorizzati sul telefono per riconoscere in futuro movimenti simili.</li>
+    <li><strong>Dettatura vocale:</strong> il riconoscimento vocale utilizza i servizi del dispositivo (es. motore Google del telefono), secondo le impostazioni di sistema. Il testo riconosciuto viene inviato a Gemini quando l'utente usa la funzione <strong>Voce</strong> (per interpretare nome, importo e categoria della spesa) o quando lo invia nella chat AI.</li>
     <li><strong>Meskey — messaggi proattivi (avatar):</strong> i suggerimenti, le statistiche e gli incoraggiamenti mostrati dal personaggio Meskey sono calcolati <strong>localmente sul dispositivo</strong>, non consumano crediti AI e <strong>non</strong> vengono inviati a server cloud per essere generati. La lettura ad alta voce, se attivata, usa la sintesi vocale (TTS) del telefono.</li>
     <li><strong>Dati meteo:</strong> coordinate o località selezionata vengono inviate a <strong>Open-Meteo</strong> per le informazioni meteorologiche, senza identificare l'utente.</li>
     <li><strong>Backup:</strong> l'esportazione e l'importazione dei file di backup (formato JSON) avvengono manualmente e restano sotto il controllo esclusivo dell'utente.</li>
     <li><strong>Abbonamenti e acquisti in-app:</strong> se l'utente acquista un piano (Basic, Pro, Pro+) o un pacchetto crediti AI, il pagamento è gestito da <strong>Google Play</strong>. Meskey riceve da Google lo stato dell'acquisto (piano attivo, rinnovo, scadenza) per sbloccare funzioni e quote AI; non riceve né memorizza i dati della carta di pagamento.</li>
+    <li><strong>Verifica degli acquisti:</strong> per confermare che un piano o un pacchetto crediti sia stato davvero acquistato, l'app invia l'identificativo del prodotto e il token d'acquisto al server intermedio gestito dallo sviluppatore, che lo verifica con Google Play (Google Play Developer API) e restituisce solo l'esito. Il server non archivia questi dati.</li>
+    <li><strong>Widget della schermata Home:</strong> i widget Android di Meskey (Spesa rapida, Saldo, Spesa) mostrano o raccolgono dati che restano sul telefono (per esempio saldo e residuo). Queste informazioni sono visibili a chiunque abbia accesso alla schermata Home sbloccata; l'utente può rimuovere i widget in qualsiasi momento. Se l'utente attiva l'inserimento rapido senza sblocco con PIN, dal widget si può solo aggiungere una spesa. Le funzioni AI avviate dal widget (Immagine, Scan, Voce) seguono le regole descritte sopra.</li>
+    <li><strong>Aggiornamenti dell'app:</strong> il controllo e il download degli aggiornamenti sono gestiti da Google Play.</li>
   </ul>
 
   <h2>3. Finalità del trattamento</h2>
@@ -53,6 +56,8 @@
     <li>Notifiche e promemoria locali sulle scadenze</li>
     <li>Visualizzazione delle condizioni meteo integrate</li>
     <li>Gestione di abbonamenti, acquisti in-app e relative quote di utilizzo AI</li>
+    <li>Calcolo sul telefono di indicatori finanziari e risposte più personalizzate in chat (Profilo finanziario)</li>
+    <li>Widget per inserimento rapido e consultazione del saldo dalla schermata Home</li>
   </ul>
 
   <h2>4. Base giuridica</h2>
@@ -63,6 +68,7 @@
     <li><strong>Google Gemini / Google Cloud (Google LLC)</strong> — elaborazione AI su richiesta dell'utente (scan, chat, import Excel). Google tratta i dati secondo la propria <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> e, per i servizi cloud fatturati, il <a href="https://cloud.google.com/terms/data-processing-addendum" target="_blank" rel="noopener">Data Processing Addendum</a> di Google Cloud.</li>
     <li><strong>Google Play / Google Play Billing (Google LLC)</strong> — abbonamenti e acquisti in-app. Pagamento, fatturazione, rinnovo e disdetta sono gestiti da Google secondo i termini di Google Play e la relativa <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. Meskey non elabora i dati della carta di credito.</li>
     <li><strong>Open-Meteo</strong> — servizio meteo. <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Termini di utilizzo</a>.</li>
+    <li><strong>Cloudflare</strong> (Cloudflare, Inc.) — infrastruttura (Cloudflare Workers) del server intermedio gestito dallo sviluppatore, che inoltra le richieste AI a Google e verifica gli acquisti con Google Play. I contenuti transitano in forma cifrata e non vengono archiviati dal proxy; Cloudflare può trattare dati tecnici di rete (per esempio l'indirizzo IP) per erogare e proteggere il servizio, secondo la propria informativa.</li>
   </ul>
   <p><em>Nota:</em> le richieste verso Google Gemini possono passare da un <strong>server intermedio (proxy)</strong> gestito dallo sviluppatore, che inoltra i dati a Google senza conservarli. Quando attivo, il proxy non archivia documenti, immagini o messaggi di chat.</p>
 
@@ -85,6 +91,8 @@
   <h2>7. Permessi richiesti sul dispositivo</h2>
   <ul>
     <li><strong>Fotocamera:</strong> per scattare foto a scontrini e documenti da analizzare</li>
+    <li><strong>Microfono:</strong> per la dettatura vocale delle spese (funzione Voce); l'audio è elaborato dal riconoscimento vocale del dispositivo e non viene registrato da Meskey</li>
+    <li><strong>Internet:</strong> per le funzioni cloud (AI, meteo, verifica degli acquisti e aggiornamenti)</li>
     <li><strong>Archiviazione / file:</strong> per selezionare file Excel, CSV, PDF o immagini dalla galleria e per i backup locali</li>
     <li><strong>Notifiche:</strong> per promemoria sulle scadenze, gestiti sul telefono</li>
     <li><strong>Posizione (opzionale):</strong> per il servizio meteo, senza tracciamento storico degli spostamenti</li>
@@ -108,7 +116,7 @@
   <p>Richieste: <a href="mailto:meskey.app@gmail.com">meskey.app@gmail.com</a></p>
 
   <h2>10. Sicurezza</h2>
-  <p>I dati registrati nell'app sono protetti dai meccanismi di sicurezza nativi di Android (incluso, se attivato, il blocco con PIN o biometrico). Le comunicazioni verso servizi esterni (AI, meteo, Play Billing) avvengono tramite protocolli cifrati (HTTPS/TLS). La chiave API di Google Gemini non è inclusa nell'applicazione installata dall'utente: le richieste AI passano da infrastruttura server-side controllata dallo sviluppatore.</p>
+  <p>I dati registrati nell'app sono protetti dai meccanismi di sicurezza nativi di Android (incluso, se attivato, il blocco con PIN o biometrico). L'app può inoltre oscurare il proprio contenuto nell'elenco delle app recenti e impedire gli screenshot per proteggere i dati mostrati. Le comunicazioni verso servizi esterni (AI, meteo, Play Billing) avvengono tramite protocolli cifrati (HTTPS/TLS). La chiave API di Google Gemini non è inclusa nell'applicazione installata dall'utente: le richieste AI passano da infrastruttura server-side controllata dallo sviluppatore.</p>
 
   <h2>11. Uso dell'intelligenza artificiale</h2>
   <p>Meskey offre <strong>due tipi di assistenza</strong>, con regole di privacy diverse:</p>
@@ -122,6 +130,9 @@
   <h3>11.3 Funzioni in evoluzione</h3>
   <p>Meskey potrà aggiungere nel tempo nuove capacità dell'assistente (es. suggerimenti più personalizzati, promemoria intelligenti, analisi avanzate). Le funzioni che <strong>inviano dati a server cloud</strong> resteranno <strong>opzionali</strong>, saranno descritte in questa informativa e, se necessario, soggette a un aggiornamento del consenso in app. Le funzioni che restano <strong>solo sul dispositivo</strong> non richiederanno trasmissione dati esterna.</p>
 
+  <h3>11.4 Natura informativa delle risposte</h3>
+  <p>Le risposte dell'assistente AI, comprese quelle su risparmio, debiti, spese e obiettivi, hanno <strong>carattere puramente informativo</strong>: si basano sui dati inseriti dall'utente e su indicatori calcolati nell'app, <strong>non costituiscono consulenza finanziaria, fiscale o legale personalizzata né raccomandazioni di investimento</strong>, possono contenere errori e non sostituiscono un professionista abilitato. L'assistente non consiglia di acquistare o vendere strumenti finanziari specifici. Le decisioni importanti restano responsabilità dell'utente.</p>
+
   <p>L'utente resta responsabile dei documenti e dei contenuti caricati o dettati nell'app.</p>
 
   <h2>12. Modifiche alla presente informativa</h2>
@@ -132,7 +143,7 @@
   <p class="lang-note">🇬🇧 <strong>English version below</strong></p>
 
   <h1>Privacy Policy</h1>
-  <div class="meta">Application: <strong>Meskey</strong> &nbsp;|&nbsp; Last updated: <strong>28 July 2026</strong></div>
+  <div class="meta">Application: <strong>Meskey</strong> &nbsp;|&nbsp; Last updated: <strong>26 October 2026</strong></div>
 
   <p>This Privacy Policy describes how the Meskey application collects, uses, and protects user data in compliance with the European General Data Protection Regulation (GDPR – EU Regulation 2016/679) and Google Play Store policies.</p>
 
@@ -144,14 +155,17 @@
 
   <p>Limited exceptions (only when you enable or use the corresponding feature):</p>
   <ul>
-    <li><strong>AI document analysis:</strong> when you scan or upload a document (PDF, image, statement), its content is temporarily sent over encrypted HTTPS to <strong>Google Gemini</strong> (Google LLC) solely to extract amounts, dates, and descriptions. Meskey does not keep copies on external servers.</li>
-    <li><strong>AI financial chat (✨ tab):</strong> if you use the financial assistant chat, the app sends Google Gemini a <strong>structured summary</strong> of your on-device financial data (expenses, income, loans, balances, trends) needed to answer your questions. PINs, passwords, or full card numbers are not sent.</li>
-    <li><strong>Excel import with AI:</strong> for some bank exports, categories or mapping may be suggested via Google Gemini.</li>
-    <li><strong>Voice dictation:</strong> speech recognition uses your device's services (e.g. Google on Android), per system settings. Recognised text is sent to Gemini <strong>only</strong> if you submit it in the AI chat.</li>
+    <li><strong>AI document analysis:</strong> when you scan or upload a document (PDF, image, statement, a loan's repayment schedule), its content is temporarily sent over encrypted HTTPS to <strong>Google Gemini</strong> (Google LLC) solely to extract amounts, dates, and descriptions. Meskey does not keep copies on external servers.</li>
+    <li><strong>AI financial chat (✨ tab):</strong> if you use the financial assistant chat, the app sends Google Gemini a <strong>structured summary</strong> of your on-device financial data (expenses, income, loans, balances, trends) needed to answer your questions. PINs, passwords, or full card numbers are not sent. If you filled in the <strong>Financial profile</strong> (goal, time horizon, risk attitude and target amount, all optional), this information is included in the request to make answers more relevant. Some indicators (for example savings rate, months of expenses covered by your balance, share of income going to instalments) are computed on your phone and sent as part of the summary.</li>
+    <li><strong>Excel import with AI:</strong> reading and first categorisation of transactions happen on your phone. Only for rows the app cannot classify with confidence, and <strong>only after you confirm</strong>, the description and amount of those rows are sent to Google Gemini to suggest a name and category. The names and categories you choose stay stored on your phone to recognise similar transactions in the future.</li>
+    <li><strong>Voice dictation:</strong> speech recognition uses your device's services (e.g. Google on Android), per system settings. Recognised text is sent to Gemini when you use the <strong>Voice</strong> feature (to interpret the name, amount and category of the expense) or when you submit it in the AI chat.</li>
     <li><strong>Meskey proactive messages (avatar):</strong> tips, statistics, and encouragement from the Meskey character are computed <strong>locally on your device</strong>, do not use AI cloud credits, and are <strong>not</strong> sent to cloud servers to be generated. Optional read-aloud uses your device's text-to-speech (TTS).</li>
     <li><strong>Weather data:</strong> coordinates or selected location are sent to <strong>Open-Meteo</strong> without identifying you.</li>
     <li><strong>Backups:</strong> JSON export/import is manual and remains under your control.</li>
     <li><strong>Subscriptions and in-app purchases:</strong> if you buy a plan (Basic, Pro, Pro+) or an AI credit pack, payment is handled by <strong>Google Play</strong>. Meskey receives purchase status from Google (active plan, renewal, expiry) to unlock features and AI quotas; it does not receive or store your payment card details.</li>
+    <li><strong>Purchase verification:</strong> to confirm that a plan or credit pack was really purchased, the app sends the product ID and the purchase token to the developer-operated intermediate server, which verifies it with Google Play (Google Play Developer API) and returns only the result. The server does not store this data.</li>
+    <li><strong>Home screen widgets:</strong> Meskey's Android widgets (Quick expense, Balance, Expense) show or collect data that stays on your phone (for example balance and remaining amounts). This information is visible to anyone with access to your unlocked home screen; you can remove the widgets at any time. If you enable quick entry without PIN unlock, the widget can only add an expense. AI features started from the widget (Image, Scan, Voice) follow the rules described above.</li>
+    <li><strong>App updates:</strong> checking and downloading updates is handled by Google Play.</li>
   </ul>
 
   <h2>3. Purpose of Processing</h2>
@@ -164,6 +178,8 @@
     <li>Local payment reminders</li>
     <li>Integrated weather display</li>
     <li>Managing subscriptions, in-app purchases, and related AI usage quotas</li>
+    <li>Computing financial indicators on your phone and more personalised chat answers (Financial profile)</li>
+    <li>Widgets for quick entry and balance display on the home screen</li>
   </ul>
 
   <h2>4. Legal Basis</h2>
@@ -174,6 +190,7 @@
     <li><strong>Google Gemini / Google Cloud (Google LLC)</strong> — on-demand AI (scan, chat, Excel import). See Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and, for billed cloud services, the <a href="https://cloud.google.com/terms/data-processing-addendum" target="_blank" rel="noopener">Cloud Data Processing Addendum</a>.</li>
     <li><strong>Google Play / Google Play Billing (Google LLC)</strong> — subscriptions and in-app purchases. Payment, billing, renewal, and cancellation are handled by Google under Google Play terms and Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. Meskey does not process your credit card data.</li>
     <li><strong>Open-Meteo</strong> — weather. <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Terms</a>.</li>
+    <li><strong>Cloudflare</strong> (Cloudflare, Inc.) — infrastructure (Cloudflare Workers) of the developer-operated intermediate server, which forwards AI requests to Google and verifies purchases with Google Play. Content travels encrypted and is not stored by the proxy; Cloudflare may process technical network data (for example the IP address) to deliver and protect the service, under its own privacy policy.</li>
   </ul>
   <p><em>Note:</em> requests to Google Gemini may pass through a developer-operated <strong>proxy</strong> that forwards data without storing documents, images, or chat messages.</p>
 
@@ -196,6 +213,8 @@
   <h2>7. Device Permissions</h2>
   <ul>
     <li><strong>Camera:</strong> capture receipts and documents for scanning</li>
+    <li><strong>Microphone:</strong> voice entry of expenses (Voice feature); audio is processed by the device's speech recognition and is not recorded by Meskey</li>
+    <li><strong>Internet:</strong> for cloud features (AI, weather, purchase verification and updates)</li>
     <li><strong>Storage / files:</strong> select Excel, CSV, PDF, or gallery images; local backups</li>
     <li><strong>Notifications:</strong> local payment reminders</li>
     <li><strong>Location (optional):</strong> weather only; no location history tracking</li>
@@ -218,7 +237,7 @@
   <p>Contact: <a href="mailto:meskey.app@gmail.com">meskey.app@gmail.com</a></p>
 
   <h2>10. Security</h2>
-  <p>App data is protected by Android's security framework (including optional PIN or biometric lock). External communication (AI, weather, Play Billing) uses HTTPS/TLS. The Google Gemini API key is not embedded in the installed app; AI requests go through developer-controlled server-side infrastructure.</p>
+  <p>App data is protected by Android's security framework (including optional PIN or biometric lock). The app may also hide its content in the recent apps list and block screenshots to protect the data shown. External communication (AI, weather, Play Billing) uses HTTPS/TLS. The Google Gemini API key is not embedded in the installed app; AI requests go through developer-controlled server-side infrastructure.</p>
 
   <h2>11. Use of Artificial Intelligence</h2>
 
@@ -230,6 +249,9 @@
 
   <h3>11.3 Evolving features</h3>
   <p>Meskey may add assistant capabilities over time. Features that <strong>send data to cloud servers</strong> will remain <strong>optional</strong>, will be described in this policy, and may require updated in-app consent. Features that stay <strong>on-device only</strong> will not require external data transmission.</p>
+
+  <h3>11.4 Informational nature of the answers</h3>
+  <p>The AI assistant's answers, including those on savings, debts, expenses and goals, are <strong>purely informational</strong>: they are based on the data you entered and on indicators computed in the app, <strong>do not constitute personalised financial, tax or legal advice or investment recommendations</strong>, may contain errors and do not replace a qualified professional. The assistant does not advise buying or selling specific financial instruments. Important decisions remain your responsibility.</p>
 
   <p>You remain responsible for documents and content you upload or dictate.</p>
 
