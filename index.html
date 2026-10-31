@@ -20,7 +20,7 @@
 <body>
 
   <h1>Informativa sulla Privacy</h1>
-  <div class="meta">Applicazione: <strong>Meskey</strong> &nbsp;|&nbsp; Ultimo aggiornamento: <strong>26 ottobre 2026</strong></div>
+  <div class="meta">Applicazione: <strong>Meskey</strong> &nbsp;|&nbsp; Ultimo aggiornamento: <strong>31 ottobre 2026</strong></div>
 
   <p>La presente informativa descrive come l'applicazione <strong>Meskey</strong> raccoglie, utilizza e protegge i dati degli utenti, in conformità con il Regolamento Europeo sulla Protezione dei Dati (GDPR – Reg. UE 2016/679) e le linee guida del Google Play Store.</p>
 
@@ -44,6 +44,7 @@
     <li><strong>Backup:</strong> l'esportazione e l'importazione dei file di backup (formato JSON) avvengono manualmente e restano sotto il controllo esclusivo dell'utente.</li>
     <li><strong>Abbonamenti e acquisti in-app:</strong> se l'utente acquista un piano (Basic, Pro, Pro+) o un pacchetto crediti AI, il pagamento è gestito da <strong>Google Play</strong>. Meskey riceve da Google lo stato dell'acquisto (piano attivo, rinnovo, scadenza) per sbloccare funzioni e quote AI; non riceve né memorizza i dati della carta di pagamento.</li>
     <li><strong>Verifica degli acquisti:</strong> per confermare che un piano o un pacchetto crediti sia stato davvero acquistato, l'app invia l'identificativo del prodotto e il token d'acquisto al server intermedio gestito dallo sviluppatore, che lo verifica con Google Play (Google Play Developer API) e restituisce solo l'esito. Il server non archivia questi dati.</li>
+    <li><strong>Verifica di integrità e limiti d'uso:</strong> per proteggere le funzioni AI da usi anomali, l'app genera un codice casuale e anonimo (non collegato a nome, email o altri dati personali) e chiede a Google Play un attestato di integrità (Play Integrity) che conferma che l'app è quella originale installata da Google Play su un dispositivo genuino. Codice e attestato sono inviati al server intermedio gestito dallo sviluppatore, che li usa solo per rilasciare una sessione temporanea di sicurezza e applicare limiti di richieste. Non sono usati per profilare l'utente né per pubblicità. L'indirizzo IP è visto dall'infrastruttura Cloudflare per instradare e proteggere la connessione; il server lo tiene solo temporaneamente in memoria per i limiti e non lo archivia.</li>
     <li><strong>Widget della schermata Home:</strong> i widget Android di Meskey (Spesa rapida, Saldo, Spesa) mostrano o raccolgono dati che restano sul telefono (per esempio saldo e residuo). Queste informazioni sono visibili a chiunque abbia accesso alla schermata Home sbloccata; l'utente può rimuovere i widget in qualsiasi momento. Se l'utente attiva l'inserimento rapido senza sblocco con PIN, dal widget si può solo aggiungere una spesa. Le funzioni AI avviate dal widget (Immagine, Scan, Voce) seguono le regole descritte sopra.</li>
     <li><strong>Aggiornamenti dell'app:</strong> il controllo e il download degli aggiornamenti sono gestiti da Google Play.</li>
   </ul>
@@ -68,7 +69,7 @@
   <h2>5. Servizi di terze parti</h2>
   <ul>
     <li><strong>Google Gemini / Google Cloud (Google LLC)</strong> — elaborazione AI su richiesta dell'utente (scan, chat, import Excel). Google tratta i dati secondo la propria <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> e, per i servizi cloud fatturati, il <a href="https://cloud.google.com/terms/data-processing-addendum" target="_blank" rel="noopener">Data Processing Addendum</a> di Google Cloud.</li>
-    <li><strong>Google Play / Google Play Billing (Google LLC)</strong> — abbonamenti e acquisti in-app. Pagamento, fatturazione, rinnovo e disdetta sono gestiti da Google secondo i termini di Google Play e la relativa <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. Meskey non elabora i dati della carta di credito.</li>
+    <li><strong>Google Play / Google Play Billing / Play Integrity (Google LLC)</strong> — abbonamenti, acquisti in-app e verifica di integrità dell'app. Pagamento, fatturazione, rinnovo e disdetta sono gestiti da Google secondo i termini di Google Play e la relativa <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. Meskey non elabora i dati della carta di credito.</li>
     <li><strong>Open-Meteo</strong> — servizio meteo. <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Termini di utilizzo</a>.</li>
     <li><strong>Cloudflare</strong> (Cloudflare, Inc.) — infrastruttura (Cloudflare Workers) del server intermedio gestito dallo sviluppatore, che inoltra le richieste AI a Google e verifica gli acquisti con Google Play. I contenuti transitano in forma cifrata e non vengono archiviati dal proxy; Cloudflare può trattare dati tecnici di rete (per esempio l'indirizzo IP) per erogare e proteggere il servizio, secondo la propria informativa.</li>
   </ul>
@@ -96,7 +97,7 @@
     <li><strong>Fotocamera:</strong> per scattare foto a scontrini e documenti da analizzare</li>
     <li><strong>Microfono:</strong> per la dettatura vocale delle spese (funzione Voce); l'audio è elaborato dal riconoscimento vocale del dispositivo e non viene registrato da Meskey</li>
     <li><strong>Internet:</strong> per le funzioni cloud (AI, meteo, verifica degli acquisti e aggiornamenti)</li>
-    <li><strong>Archiviazione / file:</strong> per selezionare file Excel, CSV, PDF o immagini dalla galleria e per i backup locali</li>
+    <li><strong>File e foto:</strong> per selezionare file Excel, CSV, PDF o immagini si usa il selettore di file e foto del sistema, senza accesso generale alla galleria o ai video del telefono; i backup locali sono salvati nella cartella scelta dall'utente</li>
     <li><strong>Notifiche:</strong> per promemoria sulle scadenze, gestiti sul telefono</li>
     <li><strong>Posizione (opzionale):</strong> per il servizio meteo, senza tracciamento storico degli spostamenti</li>
     <li><strong>Biometrico (opzionale):</strong> per sbloccare l'app; i dati biometrici restano nel sistema operativo, Meskey non li raccoglie</li>
@@ -152,7 +153,7 @@
   <p class="lang-note">🇬🇧 <strong>English version below</strong></p>
 
   <h1>Privacy Policy</h1>
-  <div class="meta">Application: <strong>Meskey</strong> &nbsp;|&nbsp; Last updated: <strong>26 October 2026</strong></div>
+  <div class="meta">Application: <strong>Meskey</strong> &nbsp;|&nbsp; Last updated: <strong>31 October 2026</strong></div>
 
   <p>This Privacy Policy describes how the Meskey application collects, uses, and protects user data in compliance with the European General Data Protection Regulation (GDPR – EU Regulation 2016/679) and Google Play Store policies.</p>
 
@@ -176,6 +177,7 @@
     <li><strong>Backups:</strong> JSON export/import is manual and remains under your control.</li>
     <li><strong>Subscriptions and in-app purchases:</strong> if you buy a plan (Basic, Pro, Pro+) or an AI credit pack, payment is handled by <strong>Google Play</strong>. Meskey receives purchase status from Google (active plan, renewal, expiry) to unlock features and AI quotas; it does not receive or store your payment card details.</li>
     <li><strong>Purchase verification:</strong> to confirm that a plan or credit pack was really purchased, the app sends the product ID and the purchase token to the developer-operated intermediate server, which verifies it with Google Play (Google Play Developer API) and returns only the result. The server does not store this data.</li>
+    <li><strong>Integrity check and usage limits:</strong> to protect the AI features from abuse, the app generates a random, anonymous code (not linked to name, email or other personal data) and asks Google Play for an integrity attestation (Play Integrity) confirming that the app is the genuine one installed from Google Play on a genuine device. The code and the attestation are sent to the developer-operated intermediate server, which uses them only to issue a temporary security session and apply request limits. They are not used for profiling or advertising. The IP address is seen by the Cloudflare infrastructure to route and protect the connection; the server keeps it only temporarily in memory for rate limits and does not store it.</li>
     <li><strong>Home screen widgets:</strong> Meskey's Android widgets (Quick expense, Balance, Expense) show or collect data that stays on your phone (for example balance and remaining amounts). This information is visible to anyone with access to your unlocked home screen; you can remove the widgets at any time. If you enable quick entry without PIN unlock, the widget can only add an expense. AI features started from the widget (Image, Scan, Voice) follow the rules described above.</li>
     <li><strong>App updates:</strong> checking and downloading updates is handled by Google Play.</li>
   </ul>
@@ -200,7 +202,7 @@
   <h2>5. Third-Party Services</h2>
   <ul>
     <li><strong>Google Gemini / Google Cloud (Google LLC)</strong> — on-demand AI (scan, chat, Excel import). See Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> and, for billed cloud services, the <a href="https://cloud.google.com/terms/data-processing-addendum" target="_blank" rel="noopener">Cloud Data Processing Addendum</a>.</li>
-    <li><strong>Google Play / Google Play Billing (Google LLC)</strong> — subscriptions and in-app purchases. Payment, billing, renewal, and cancellation are handled by Google under Google Play terms and Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. Meskey does not process your credit card data.</li>
+    <li><strong>Google Play / Google Play Billing / Play Integrity (Google LLC)</strong> — subscriptions, in-app purchases and app integrity verification. Payment, billing, renewal, and cancellation are handled by Google under Google Play terms and Google's <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. Meskey does not process your credit card data.</li>
     <li><strong>Open-Meteo</strong> — weather. <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Terms</a>.</li>
     <li><strong>Cloudflare</strong> (Cloudflare, Inc.) — infrastructure (Cloudflare Workers) of the developer-operated intermediate server, which forwards AI requests to Google and verifies purchases with Google Play. Content travels encrypted and is not stored by the proxy; Cloudflare may process technical network data (for example the IP address) to deliver and protect the service, under its own privacy policy.</li>
   </ul>
@@ -228,7 +230,7 @@
     <li><strong>Camera:</strong> capture receipts and documents for scanning</li>
     <li><strong>Microphone:</strong> voice entry of expenses (Voice feature); audio is processed by the device's speech recognition and is not recorded by Meskey</li>
     <li><strong>Internet:</strong> for cloud features (AI, weather, purchase verification and updates)</li>
-    <li><strong>Storage / files:</strong> select Excel, CSV, PDF, or gallery images; local backups</li>
+    <li><strong>Files and photos:</strong> to select Excel, CSV, PDF or image files the system file and photo picker is used, without general access to the phone's gallery or videos; local backups are saved in the folder chosen by the user</li>
     <li><strong>Notifications:</strong> local payment reminders</li>
     <li><strong>Location (optional):</strong> weather only; no location history tracking</li>
     <li><strong>Biometric (optional):</strong> app unlock; biometric data stays in the OS, not collected by Meskey</li>
